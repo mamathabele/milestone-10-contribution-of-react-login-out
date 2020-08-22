@@ -1,84 +1,26 @@
 import React from "react";
-import Home from "./Home";
-import Signin from "./Signin";
-import About from "./About";
-import Navigation from "./Navigation";
-import Cart from "./Cart";
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
-import "./styles.css";
-import { connect } from "react-redux";
+import logo from "./logo.svg";
+import "./App.css";
+import pay1 from "./components/pay1";
+import pay2 from "./components/pay2";
 
-const PrivateRoute = ({ component: Component, isLogged, ...rest }) => {
+import { BrowserRouter, Route } from "react-router-dom";
+//import Navigation from "./components/Navbar";
+import Routes from "./components/Routes";
+
+function App() {
   return (
-    <Route
-      {...rest}
-      render={(props) => {
-        if (isLogged) {
-          return <Component />;
-        } else {
-          return <Redirect to="/signin" />;
-        }
-      }}
-    />
-  );
-};
-
-class App extends React.Component {
-  state = {
-    username: "",
-    password: "",
-  };
-  handleChangeText = (event) => {
-    this.setState({
-      username: event.target.value,
-    });
-  };
-  handleChangePassword = (event) => {
-    this.setState({
-      password: event.target.value,
-    });
-  };
-  render() {
-    return (
-      <div className="App">
+    <div className="App">
+      {/* <Navigation /> */}
+      <Routes />
+      {/* <header className="App-header">
         <BrowserRouter>
-          <Navigation />
-          <Route exact path="/" component={Home} />
-          <PrivateRoute
-            component={About}
-            path="/about"
-            isLogged={this.props.isLogged}
-            exact
-          />
-          <PrivateRoute
-            component={Cart}
-            path="/cart"
-            isLogged={this.props.isLogged}
-            exact
-          />
-          <Route
-            exact
-            path="/signin"
-            // component={Signin}
-            render={(props) => {
-              return (
-                <Signin
-                  {...props}
-                  username={this.state.username}
-                  password={this.state.password}
-                  handleChangePassword={this.handleChangePassword}
-                  handleChangeText={this.handleChangeText}
-                />
-              );
-            }}
-          />
+          <Route exact path="/" component={pay1} />
         </BrowserRouter>
-      </div>
-    );
-  }
+        <pay1 />
+      </header> */}
+    </div>
+  );
 }
 
-function mapStateToProps(state) {
-  return state;
-}
-export default connect(mapStateToProps)(App);
+export default App;

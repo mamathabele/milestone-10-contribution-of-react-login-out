@@ -1,0 +1,106 @@
+.nam {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: -305px;
+}
+.content {
+  justify-content: center;
+  margin-left: 550px;
+  padding-top: 10px;
+}
+.nam2 {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: -305px;
+}
+.nam3 {
+  margin-top: 10px;
+  font-size: 15px;
+  margin-left: -245px;
+}
+.bicon {
+  width: 350px;
+  height: 50px;
+  padding-bottom: 20px;
+  fill-opacity: inherit;
+}
+.title1 {
+  color: gray;
+  font-size: 15px;
+  margin-left: 295px;
+  width: 200px;
+}
+.row1 {
+  margin-top: 10px;
+}
+.input1 {
+  text-align: left;
+  padding-left: 26px;
+}
+.title2 {
+  color: gray;
+  font-size: 15px;
+  padding-left: 325px;
+
+  width: 200px;
+}
+.title3 {
+  color: gray;
+  font-size: 15px;
+  margin-left: 280px;
+
+  width: 200px;
+}
+.title4 {
+  color: gray;
+  font-size: 15px;
+  margin-left: 312px;
+
+  width: 200px;
+}
+.box {
+  border: 1px solid rgb(0, 255, 213);
+  padding: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+.input2 {
+  text-align: center;
+  position: "relative";
+  display: inline;
+}
+.enter {
+  width: 350px;
+  border-radius: 5px;
+}
+.selec {
+  width: 30px;
+  height: 25px;
+}
+.login-form-button1 {
+  width: 350px;
+  border-radius: 5px;
+}
+.breadcrump {
+  font-size: 15px;
+  margin-left: -195px;
+  padding-bottom: 5px;
+}
+.pwrd {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-right: 560px;
+}
+.imge2 {
+  width: 30px;
+  height: 30px;
+}
+.imge3 {
+  width: 50px;
+  height: 30px;
+}
+.imge1 {
+  width: 120px;
+  height: 30px;
+}
